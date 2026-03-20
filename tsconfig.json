@@ -1,23 +1,34 @@
 {
   "compilerOptions": {
+    /* --- Language & Output --- */
     "target": "ES2017",
     "lib": ["dom", "dom.iterable", "esnext"],
-    "allowJs": true,
-    "skipLibCheck": true,
-    "strict": true,
-    "noEmit": true,
-    "esModuleInterop": true,
+    "jsx": "react-jsx",
     "module": "esnext",
     "moduleResolution": "bundler",
+
+    /* --- Strict Type Checking --- */
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "forceConsistentCasingInFileNames": true,
+
+    /* --- Module Settings --- */
+    "allowJs": true,
+    "skipLibCheck": true,
+    "noEmit": true,
+    "esModuleInterop": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "react-jsx",
     "incremental": true,
+
+    /* --- Next.js Plugin --- */
     "plugins": [
       {
         "name": "next"
       }
     ],
+
+    /* --- Path Aliases --- */
     "paths": {
       "@/*": ["./src/*"]
     }
